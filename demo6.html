@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-提问-prompt消息对话框</title>
+</head>
+<body>
+    <script>
+
+        //语法：prompt(str1, str2);
+        //说明：str1:要显示在对话框中上方的提示文字，不可以修改~ str2：默认输入的文字，可以修改
+        //str1: 要显示在消息对话框中的文本，不可修改
+        //str2：文本框中的内容，可以修改
+
+        // 1. 点击确定按钮，文本框中的内容将作为函数返回值 2. 点击取消按钮，将返回null
+        var message = prompt('请输入你的名字：','小可爱')
+        if(message !='null'){
+            alert('你好小可爱' + message)
+        }else{
+            alert('你好，myFriend!')
+        }
+    </script>
+    
+</body>
+</html>
